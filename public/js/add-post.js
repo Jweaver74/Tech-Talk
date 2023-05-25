@@ -1,3 +1,4 @@
+// Purpose: add-post.js is used to add a new post to the database
 async function newFormHandler(event) {
   event.preventDefault();
 
@@ -5,7 +6,7 @@ async function newFormHandler(event) {
   const post_content = document.querySelector(
     'textarea[name="post-content"]'
   ).value;
-
+// send the title and post_text to the post route
   const response = await fetch(`/api/posts`, {
     method: "POST",
     body: JSON.stringify({
@@ -16,7 +17,7 @@ async function newFormHandler(event) {
       "Content-Type": "application/json",
     },
   });
-
+// check the response status
   if (response.ok) {
     document.location.replace("/dashboard");
   } else {

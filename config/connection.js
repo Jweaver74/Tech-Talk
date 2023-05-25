@@ -1,8 +1,9 @@
+// This file is used to connect to the database
 const Sequelize = require("sequelize");
 require("dotenv").config();
 
 let sequelize;
-
+// If the server contains the JAWSDB_URL environmental variable, it connects to the JawsDB database.
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {

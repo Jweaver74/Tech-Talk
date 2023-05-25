@@ -1,3 +1,4 @@
+// Purpose: edit user information
 async function editFormHandler(event) {
   event.preventDefault();
 
@@ -12,12 +13,13 @@ async function editFormHandler(event) {
   } else {
     password = '"password": "' + password + '"';
   }
+  // get the user id from the url
   const id = document.querySelector('input[name="user-id"]').value.trim();
 
   let userUpdate =
     "{" + [username, email, password].filter((value) => value).join(", ") + "}";
   userUpdate = JSON.parse(userUpdate);
-
+// send the title and post_text to the post route
   const response = await fetch(`/api/users/${id}`, {
     method: "PUT",
     body: JSON.stringify(userUpdate),
@@ -25,6 +27,7 @@ async function editFormHandler(event) {
       "Content-Type": "application/json",
     },
   });
+  // check the response status
   if (response.ok) {
     document.location.replace("/dashboard");
   } else {

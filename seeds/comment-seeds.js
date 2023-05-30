@@ -7,7 +7,7 @@ const commentData = [
         post_id: 1
     },
     {
-        comment_text: "Whats everyones thought on HTML!",
+        comment_text: "Whats everyone's thought on HTML!",
         user_id: 2,
         post_id: 2
     },

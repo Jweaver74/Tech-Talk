@@ -58,6 +58,7 @@ Tech Talk
 A space where developers can publish their blog post and comment on other posts.
 
 ## LiveLink
+https://damp-falls-37483.herokuapp.com/
 
 ## Description
  Build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. 
@@ -74,7 +75,7 @@ None
 [Contributor Covenant](https://www.contributor-covenant.org/)
 
 ## Challenge
-Starting this challenge from scratch without any starter code, was very challening.  Learning how to connect everything together was a challenge.
+Starting this challenge from scratch without any starter code, was very challenging.  Learning how to connect everything together was a challenge.
 
 ## GitHub
 

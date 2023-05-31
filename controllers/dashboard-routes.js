@@ -26,7 +26,7 @@ router.get("/",withAuth, (req, res) => {
     ],
   })
     .then((dbPostData) => {
-      console.log(dbPostData);
+      //console.log(dbPostData);
       const posts = dbPostData.map((post) => post.get({ plain: true }));
       res.render("dashboard", { posts, loggedIn: true });
     })
@@ -43,11 +43,22 @@ router.get("/edit/:id", withAuth, (req, res) => {
       id: req.params.id,
     },
     attributes: ["id", "post_text", "title", "created_at"],
-    include: {
+    include: [
+      {
+      model: Comment,
+      attributes: ["id", "comment_text", "post_id", "user_id", "created_at"],
+      include: {
       model: User,
       attributes: ["username"],
     },
-  })
+  },
+  {
+    model: User,
+    attributes: ["username"],
+  },
+],
+})
+
     .then((dbPostData) => {
       if (!dbPostData) {
         res.status(404).json({ message: "No post found with this id" });
@@ -63,7 +74,7 @@ router.get("/edit/:id", withAuth, (req, res) => {
 });
 
 // edit user
-router.get("/new", (req, res) => {
+router.get("/edituser",withAuth,(req, res) => {
   User.findOne({
     attributes: { exclude: ["password"] },
     where: {
@@ -85,4 +96,4 @@ router.get("/new", (req, res) => {
 });
 
 module.exports = router;
-module.exs = router;
+module.exports = router;

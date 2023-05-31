@@ -19,7 +19,7 @@ async function editFormHandler(event) {
   let userUpdate =
     "{" + [username, email, password].filter((value) => value).join(", ") + "}";
   userUpdate = JSON.parse(userUpdate);
-// send the title and post_text to the post route
+  // send the title and post_text to the post route
   const response = await fetch(`/api/users/${id}`, {
     method: "PUT",
     body: JSON.stringify(userUpdate),

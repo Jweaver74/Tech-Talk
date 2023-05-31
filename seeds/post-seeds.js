@@ -1,3 +1,4 @@
+// Purpose: To seed the database with post data
 const {Post} = require('../models');
 
 const postData = [

@@ -1,4 +1,5 @@
-const {User} = require('../models');
+// Purpose: to seed the database with user data
+const { User } = require('../models');
 
 const userData = [
     {

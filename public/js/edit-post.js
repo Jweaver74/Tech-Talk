@@ -5,12 +5,10 @@ async function editFormHandler(event) {
   const id = window.location.toString().split("/")[
     window.location.toString().split("/").length - 1
   ];
-// send the title and post_text to the post route
-  const title = document.querySelector('input[name="post-title"]').value.trim();
-  const post_text = document
-    .querySelector('textarea[name="post-text"]')
-    .value.trim();
-// send the title and post_text to the post route
+  // send the title and post_text to the post route
+  const title = document.querySelector('input[name="post-title"]').value;
+  const post_text = document.querySelector('textarea[name="post-text"]').value;
+  // send the title and post_text to the post route
   const response = await fetch(`/api/posts/${id}`, {
     method: "PUT",
     body: JSON.stringify({

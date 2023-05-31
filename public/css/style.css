@@ -54,25 +54,25 @@ textarea:focus, input:focus{
 }
 
 textarea{
-    width: 140%;
-    height: 100px;
+    min-width: 40%;
+    min-height: 100px;
 }
 
 form > div{
-    margin: 1% 0;
+    margin-bottom: 2%;
 }
 
 form label{
     display: block;
-    margin-bottom: 1%;
 }
 
 .wrapper{
     flex-direction: column;
-    align-items: center;
+   display: flex;
     margin: 0 auto;
     min-height: 100%;
     max-width: 1200px;
+    width: 100%;
 }
 
 header{
@@ -86,7 +86,7 @@ header{
 }
 
 header h1{
-    border: 2ox onset #7d7d7d;
+    border: 2px outset #7d7d7d;
     border-radius: 5px;
     background-color: antiquewhite;
     padding: 1.25rem;
@@ -121,6 +121,7 @@ nav{
 }
 
 .btn-no-style:hover{
+    background:none;
     color: black;
 }
 

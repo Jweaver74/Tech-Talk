@@ -1,3 +1,4 @@
+//signup form handler
 async function signupFormHandler(event) {
   event.preventDefault();
 
@@ -18,7 +19,7 @@ async function signupFormHandler(event) {
 
     // check the response status
     if (response.ok) {
-      console.log("success");
+      alert("success");
       document.location.replace("/dashboard");
     } else {
       alert(response.statusText);

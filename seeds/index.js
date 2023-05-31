@@ -1,3 +1,4 @@
+// Purpose: index.js file for seeds folder.  This file will run all the seed files in the seeds folder.
 const seedUsers = require('./user-seeds');
 const seedPosts = require('./post-seeds');
 const seedComments = require('./comment-seeds');

@@ -1,3 +1,4 @@
+// Purpose: Helper functions for formatting data
 module.exports = {
   format_date: (date) => {
     return `${new Date(date).getMonth() + 1}/${new Date(

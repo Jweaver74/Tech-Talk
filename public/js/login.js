@@ -5,7 +5,7 @@ async function loginFormHandler(event) {
 
   const email = document.querySelector("#email-login").value.trim();
   const password = document.querySelector("#password-login").value.trim();
-// send the title and post_text to the post route
+  // send the title and post_text to the post route
   if (email && password) {
     const response = await fetch("/api/users/login", {
       method: "post",

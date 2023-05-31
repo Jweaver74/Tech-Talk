@@ -71,6 +71,15 @@ If you want to use the deployed version, visit the live link above.
 None
 
 ## Contributing
+BCS learning Assistant # 255072 & # 255273
+Instructor: Tyler Calvert
+
+https://coding-boot-camp.github.io/full-stack/heroku/deploy-with-heroku-and-mysql
+
+https://developer.mozilla.org/en-US/docs/Glossary/MVC
+
+https://expressjs.com/en/guide/using-middleware.html
+
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 [Contributor Covenant](https://www.contributor-covenant.org/)
 

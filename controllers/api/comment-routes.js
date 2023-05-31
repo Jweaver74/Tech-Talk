@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { Comment } = require("../../models");
 const withAuth = require("../../utils/auth");
+const sequelize = require("../../config/connection");
 
 // GET /api/comments
 router.get("/", (req, res) => {
@@ -10,6 +11,18 @@ router.get("/", (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+});
+router.get("/:id", (req, res) => {
+  Comment.findAll({
+    where: {
+      id: req.params.id,
+    }
+      .then((dbCommentData) => res.json(dbCommentData))
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      }),
+  });
 });
 
 // POST /api/comments
@@ -26,6 +39,31 @@ router.post("/", withAuth, (req, res) => {
         res.status(400).json(err);
       });
   }
+});
+
+// PUT /api/comments/1
+router.put("/:id", withAuth, (req, res) => {
+  Comment.update(
+    {
+      comment_text: req.body.comment_text,
+    },
+    {
+      where: {
+        id: req.params.id,
+      },
+    }
+  )
+    .then((dbCommentData) => {
+      if (!dbCommentData) {
+        res.status(404).json({ message: "No comment found with this id" });
+        return;
+      }
+      res.json(dbCommentData);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 // DELETE /api/comments/1

@@ -21,17 +21,18 @@
 
 </section>
 
-{{#if post.length}}
+{{#if posts.length}}
 <section>
     <h2>Your Post</h2>
     <ol>
-        {{#each post as |post|}}
+        {{#each posts as |post|}}
         <li>
             {{> post-info post}}
             <a href="/dashboard/edit/{{post.id}}"class="edit-link">Edit</a>
         </li>
+        {{/each}}
     </ol>
 </section>
-{{#if}}
+{{/if}}
 
 <script src="/js/add-post.js"></script>

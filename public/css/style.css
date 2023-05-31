@@ -33,7 +33,7 @@ button{
 }
 
 button:hover{
-    background-color: red;
+    background-color: #ff643d;
 }
 
 .post-list{
@@ -126,7 +126,7 @@ nav{
 }
 
 .delete-post-btn{
-    background-color: #ff643d;
+    background-color: blue;
 }
 
 .delete-post-btn:hover{

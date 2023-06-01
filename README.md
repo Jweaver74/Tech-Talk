@@ -71,7 +71,8 @@ If you want to use the deployed version, visit the live link above.
 None
 
 ## Contributing
-BCS learning Assistant # 255072 & # 255273
+BCS learning Assistant # 255072 & # 255273 & # 
+
 Instructor: Tyler Calvert
 
 https://coding-boot-camp.github.io/full-stack/heroku/deploy-with-heroku-and-mysql

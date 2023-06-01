@@ -181,7 +181,7 @@ nav {
 }
 
 .comment:nth-child(odd) {
-  background-color: blue;
+  background-color: white;
 }
 
 .comment .meta {

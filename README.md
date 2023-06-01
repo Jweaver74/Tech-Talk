@@ -1,7 +1,7 @@
 # Tech Talk
 
 ## Technologies Used
-![HTML5](https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=HTML5&logoColor=white)
+
 ![CSS3](https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=CSS3&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
@@ -11,7 +11,6 @@
 ![Handlebars](https://img.shields.io/badge/Handlebars-FF7F00?style=for-the-badge&logo=Handlebars&logoColor=white)
 ![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=Heroku&logoColor=white)
 ![JawsDB](https://img.shields.io/badge/JawsDB-FF0000?style=for-the-badge&logo=JawsDB&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=Bootstrap&logoColor=white)
 ![bcrypt](https://img.shields.io/badge/bcrypt-000000?style=for-the-badge&logo=bcrypt&logoColor=white)
 ![dotenv](https://img.shields.io/badge/dotenv-000000?style=for-the-badge&logo=dotenv&logoColor=white)
 ![express-handlebars](https://img.shields.io/badge/express--handlebars-000000?style=for-the-badge&logo=express-handlebars&logoColor=white)
@@ -71,7 +70,7 @@ If you want to use the deployed version, visit the live link above.
 None
 
 ## Contributing
-BCS learning Assistant # 255072 & # 255273 & # 
+BCS learning Assistant # 255072 & # 255273 & # 255511
 
 Instructor: Tyler Calvert
 

@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const { Comment } = require("../../models");
 const withAuth = require("../../utils/auth");
-const sequelize = require("../../config/connection");
 
 // GET /api/comments
 router.get("/", (req, res) => {
@@ -26,7 +25,6 @@ router.post("/", withAuth, (req, res) => {
       });
   }
 });
-
 
 // DELETE /api/comments/1
 router.delete("/:id", withAuth, (req, res) => {
